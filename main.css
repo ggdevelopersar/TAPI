@@ -45,10 +45,10 @@ a{
 
 .menu a{
     font-size: 18px;
-    font-weight: 700; 
+    font-weight: 600; 
     
     color: rgb(255, 255, 255);
-    text-transform: uppercase;
+    
 }
 
 
@@ -100,10 +100,10 @@ a{
     
     .menu a{
         font-size: 18px;
-        font-weight: 500; 
+        font-weight: 600; 
         
         color: white;
-        text-transform: uppercase;
+        
     }
 
 
