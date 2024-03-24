@@ -1,0 +1,136 @@
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.topheader{
+    position: fixed;
+    box-shadow: 0 2px 8px ;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: black;
+}
+
+
+.topnav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+
+.menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.menu li{
+    padding-right: 20px;
+    padding-top: 40px;
+}
+
+.menu a{
+    font-size: 18px;
+    font-weight: 700; 
+    
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+
+
+
+.open-menu,
+.close-menu{
+    display: none;
+    
+}
+
+
+/*configuracion de la navbar*/
+
+@media(max-width: 950px){
+
+    .menu{
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        width: 100%;
+        
+        background-color: rgb(115, 15, 155);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s;
+    }
+    
+    
+    .menu li .contacto .iniciar-sesion{
+
+        text-align: center;
+        
+        padding-right: 0px;
+        padding-top: 0px;
+        
+        
+    }
+
+    .contacto{
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .iniciar-sesion{
+        text-align: center;
+        margin-bottom: 30px ;
+    }
+    
+    .menu a{
+        font-size: 18px;
+        font-weight: 500; 
+        
+        color: white;
+        text-transform: uppercase;
+    }
+
+
+    
+
+    .open-menu,
+    .close-menu{
+        display: block;
+        cursor: pointer;
+        border: none;
+    }
+
+    .open-menu{
+        filter: invert(100%) sepia(62%) saturate(53%) hue-rotate(175deg) brightness(116%) contrast(120%);
+        padding-right: 10px;
+    }
+
+    .close-menu{
+        filter: invert(100%) sepia(62%) saturate(53%) hue-rotate(175deg) brightness(116%) contrast(120%);
+        padding: 25px 15px 10px 10px;
+        align-self: flex-end;
+        background: none;
+    }
+
+    .menu_opened{
+        opacity: 1;
+        pointer-events: all;
+    }
+
+}
