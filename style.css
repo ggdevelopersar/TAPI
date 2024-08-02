@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #322d29;
+}
+
+/* ESTILOS NAVBAR*/
+.container_navbar {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos entre los extremos */
+    align-items: center;
+    padding: 10px;
+    background-color: #322d29; /* Color de fondo de la barra de navegación */
+}
+
+.logo_img img, .right_img img {
+    height: 150px; /* Ajusta la altura de las imágenes según tus necesidades */
+    width: auto;
+}
+.right_img img{
+    height: 50px;
+}
+
+/*ESTILOS IMG DATOS ALEATORIOS*/
+.carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Centra el contenido del carrusel */
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    display: flex;
+    justify-content: center; /* Centra las imágenes dentro del carrusel */
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-item img {
+    width: 95%; /* Ajusta el tamaño de las imágenes */
+    height: auto;
+    margin: 0 auto; /* Centra las imágenes horizontalmente */
+}
+
+/* ESTILOS CONSULTA VIAJE*/
+/* ESTILOS GENERALES DEL CONTENEDOR */
+.container {
+    font-size: 1.5rem; /* Ajusta la fuente a unidades relativas */
+    font-family: "Gupter", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #efe9e1;
+    margin: 50px auto; /* Centra el contenedor horizontalmente */
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 90vw; /* Ancho máximo en porcentaje de la vista */
+    width: 300px; /* Ancho inicial */
+    box-sizing: border-box;
+}
+
+/* ESTILOS DEL GRUPO DE ENTRADA */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    font-size: 1.25rem; /* Ajusta el tamaño de la fuente */
+    font-family: "Gupter", serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    color: #322d29;
+    background-color: #d1c7bd;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    box-sizing: border-box;
+}
+
+/* ESTILOS DEL BOTÓN CONSULTAR */
+.consultar-btn {
+    font-family: "Gupter", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 20px;
+    background-color: #d1c7bd;
+    color: #322d29;
+    border: 1px solid #ac9c8d; /* Agrega el borde al botón */
+    padding: 10px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1.25rem; /* Ajusta el tamaño de la fuente */
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.consultar-btn:hover {
+    color: #efe9e1;
+    background-color: #72383d;
+}
+
+/* MEDIA QUERY PARA DISPOSITIVOS MÓVILES */
+@media (max-width: 600px) {
+    .container {
+        font-size: 1.2rem; /* Ajusta el tamaño de la fuente en pantallas más pequeñas */
+        width: 90%; /* Aumenta el ancho del contenedor en pantallas más pequeñas */
+    }
+
+    .input-group input {
+        font-size: 1rem; /* Ajusta el tamaño de la fuente en pantallas más pequeñas */
+    }
+
+    .consultar-btn {
+        font-size: 1rem; /* Ajusta el tamaño de la fuente del botón */
+        width: 100%; /* Hace el botón más ancho en pantallas más pequeñas */
+    }
+}
+
+
+/* ESTILOS FOOTER */
+footer {
+    background-color: #333;
+    padding: 20px 0;
+    position: relative; /* Cambiado de fixed a relative */
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    /* O puedes eliminar la propiedad position si no es necesaria */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-icon img {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    transition: opacity 0.3s;
+}
+
+.footer-icon:hover img {
+    opacity: 0.8;
+}
+
+.footer-container a {
+    color: #fff;
+    text-decoration: none;
+}
